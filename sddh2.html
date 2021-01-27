@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SDDH
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link ref="stylesheet" href="style1.css">
+    <link ref="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px 30px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+        .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+        .fa-instagram {
+  background: red;
+  color: white;
+}
+     
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+        .navbar a{
+             float: left; 
+    display: block;
+    color: black;
+    text-align: center;  
+    
+    text-decoration: none; 
+        }
+.navbar a.right {
+    float: right; 
+} 
+ 
+ .navbar a:hover { 
+      background: radial-gradient(black,#d7d7ff);
+      border: 2px solid #555555;
+     color: white; 
+} 
+ 
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+display: inline-block;
+    margin-right: 30px;
+    font-size: 25px;
+}
+        h2{
+        margin: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            color: #555;
+        }
+        .container{
+            max-width: 1300;
+            margin: auto;
+            padding-left: 25;
+            padding-right: 25px;
+            
+        }
+        .row{
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .border img{
+             border: 1px solid black;
+             border-radius: 6px;
+        }
+        .border img:hover{
+            box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+        }
+        .row p{
+            font-size: 20px;
+            color: black;
+            padding: 25px;
+        }
+        .col-2{
+            flex-basis: 200%;
+            max-width: 100%;
+        }
+ 
+         
+       .column {
+  float: left;
+  width: 30.33%;
+  padding: 3px;
+            
+            line-height: 60px;
+            margin: 30px, 0;
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+          .column1 {
+  float: left;
+  width: 35.33%;
+  padding: 3px;
+            
+            line-height: 70px;
+            margin: 30px, 0;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+        
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+      
+        
+        .col-2 img{
+            max-width: 1520px;
+            align-items: center;
+    
+            justify-content: center; 
+        }
+        .col-2 h1{
+              position:relative; 
+             display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+            
+        }
+        .col-2 h1:before,
+.col-2 h1:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+.col-2 h1:after {
+    margin: 0 0 0 20px;
+}
+       
+        
+        .other h2{
+            padding: 20px;
+        }
+           
+        .col-4 img{
+            max-width: 300px;
+          
+            line-height: 60px;
+            margin: 60px,0 ;
+        }
+         .col-4 h4{
+            padding: 15px;
+            font-size: 20px;
+        }
+        .col-8 img{
+            max-width: 350px;
+    
+            line-height: 60px;
+            margin: 60px,0 ;
+        }
+        .col-8 h4{
+            padding: 15px;
+            font-size: 20px;
+        }
+         .col-5 img{
+            max-width: 300px;
+            line-height: 60px;
+            margin: 30px, 0;
+        }
+         .col-5 h4{
+            padding: 15px;
+            font-size: 20px;
+        }
+         .col-6 img{
+            max-width: 350px;
+            line-height: 60px;
+            margin: 30px, 0;
+        }
+         .col-6 h4{
+            padding: 15px;
+            font-size: 20px;
+        }
+         .col-7 img{
+            
+            max-width: 360px;
+            line-height: 100px;
+            margin: 50px, 0;
+        }
+         .col-7 h4{
+            padding: 15px;
+            font-size: 20px;
+        }
+       
+        #demotext{
+            float:left;
+        }
+         .btn1{
+            background-color: white;
+   padding: 8px 30px;
+            border-radius: 30px;
+  border: 2px solid yellow;
+            color: black;
+             background: radial-gradient(#d7ffd7,#d7d7ff);
+        }
+        .btn1:hover{
+             border: 5px solid yellow;
+        }
+       
+        .btn{
+            text-align: center;
+            box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+
+
+             color: black;
+         border: 2px solid black;
+            display: inline-block;
+            background: blue;
+            color: #fff;
+            padding: 8px 30px;
+            border-radius: 30px;
+            transition: background 0.5s;
+            margin: left;
+            }
+        .btn:hover{
+            background: #563434;
+        }
+        
+        .header .row{
+            margin-top: 70px;
+            
+        }
+        
+            .small-container{
+            background: radial-gradient(#d7ffd7,#d7d7ff);
+         max-width: 1525px;
+            margin: auto;
+            
+                 padding-bottom: 50px;
+            }
+        /*----------section----------*/
+        section{
+            position: relative;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 5%);
+            height: 400%
+            width: 1200px;
+            background: #000;
+            box-shadow: 0 25px 30px rgba(0,0,0,.5);
+            display: flex;
+            
+        }
+        .content{
+            width: calc(50% - 50px);
+            height: 100%;
+            background: black;
+            box-sizing: border-box;
+            color: white;
+        }
+        .imagebox{
+            width: calc(50% + 50px);
+            height: 100%;
+            background: #f00;
+            box-sizing: border-box;
+            border-left: px solid #000;
+            border-bottom:  400px solid transparent;
+            background: url(images/green.jpg);
+            background-position: -350px -300px -700px;
+        }
+        
+        .content h2{
+            padding: 10px;
+            font-weight: 100;
+            
+        }
+        .social {
+            
+            text-align: center;
+            
+        }
+        .other{
+            text-align: center;
+            padding-top: 20px;
+        }
+        hr { 
+            position: relative; 
+             border: none; 
+            height: 2px; 
+            background: black; 
+            margin-bottom: 10px; 
+        } 
+        
+    </style>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-114c5283-eae0-444c-ae4a-a039695e9eaa"></div>
+    <body>
+      
+        <div class="small-container">
+               <div class="header">
+        <div class="container">
+        
+        <div class="navbar">
+            
+               <nav>
+                    <a href="#" class="btn2"><h1>SDDH</h1><P>Creating Magical Events</P></a>
+                <hr>
+                   <ul>
+                 <li><a href="http://127.0.0.1:50612/index.html">Home</a></li>
+               <li><a href="http://127.0.0.1:50612/sddh2.html">Our Projects</a></li>
+               <li><a href="http://127.0.0.1:50612/services.html">Services</a></li>
+               <li><a href="http://127.0.0.1:50612/sddhcontact.html">Contact us</a></li>
+             <li> &#9742;__+91 9948171190</li>
+                </ul>
+                   <hr>
+                </nav>
+            
+        </div>
+        
+           
+                
+               
+              
+           <!-------service----->
+              <div class="small-container">
+        <div class="other">
+                <h1>OUR SERVICES</h1></div>
+          
+            <div class="row">
+                <h2>We do not create events, we create unforgettable experiences……..</h2>
+                <p>The Wedding Planners offers those ever-so-important services related to weddings. In fact, we love all things weddings to<br> such an extent that we take pleasure in managing all aspects in a bid to make your special day an extraordinary one that will <br>be forever remembered. Looking to plan a multi-day celebration with elaborate and regal touches? Do you want your <br>wedding to take place at a destination of your choice but you have not idea how to go about it? Or, maybe you just need <br>some help to pop the question in the most beautiful setting. We at Marry Me can handle it all!</p>
+                 <div class="row">
+       
+     <div class="column">
+                <img src="images/engagement.webp" alt="wedding" style="width:100%"><h2>Engagenment</h2></div>
+                   
+               
+                 <div class="column1">
+                <img src="images/wedding.jpg" alt="wedding" style="width:100%"><h2>Wedding</h2></div>
+               <div class="column">
+           
+                <img src="images/dinner.jpg" alt="dinner" style="width:100%">  <h2>Dinner</h2></div>
+            </div>
+                
+            </div>
+            </div>   
+                </div>
+      
+              
+    
+        
+             
+        
+ 
+   
+   
+       
+        <!-------------img--------->
+       <div class="small-container">
+        <section>
+    
+        <div class="imagebox"></div>
+        <div class="content"><h2>– Engagement <br><br>
+
+– Mehndi<br><br>
+
+– Sangeet<br><br>
+            
+– HaldiBridal & Groom Showers<br><br>
+
+– Bachelorette Parties<br><br>
+
+– North Indian Rituals & South Indian Rituals
+           </h2> </div>
+        </section>
+           
+   </div>
+           <!-------------social------->
+         <div class="social"> 
+             <hr><h2>contact us in social media</h2><hr>
+      
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-youtube"></a>
+       
+    
+    
+    <p></p>
+      <a href="" class="btn"> &#8594;GET IN TOUCH </a>
+    
+  
+    </div>
+    
+    </body>
+</html>
